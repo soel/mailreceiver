@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20150417091855) do
 
   create_table "emails", force: true do |t|
-    t.string   "title"
+    t.string   "subject"
     t.string   "body"
     t.string   "from"
     t.datetime "created_at"

@@ -1,9 +1,16 @@
 class UserMailer < ActionMailer::Base
+  #require 'tmail'
+  #require 'kconv'
+
   default from: "from@example.com"
   def receive(email)
-    from = email.from[0]
+    #mailadd = TMail::Mail.parse(email)
 
-    mail = Email.new(from: from, title: email.title, body: email.body)
+    from = email.from[0]
+    subject = email.subject
+    body = email.body.raw_source
+
+    mail = Email.new(from: from, subject: subject, body: body)
     mail.save
 
   end
