@@ -1,0 +1,9 @@
+/home/kanbara/.rbenv/versions/2.2.1/bin/ruby -r ./siteconf20150417-22388-19gehtm.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: `all' に対して行うべき事はありません.
+
+make "DESTDIR=" install
